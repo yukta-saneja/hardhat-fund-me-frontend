@@ -1,0 +1,24 @@
+<!-- type ! in vscode and press enter, u get default page set for u :), use live server extension of vs code -->
+<!DOCTYPE html>
+<html lang="en">
+  <head></head>
+    <title>Fund Me App</title>
+  </head>
+  <body>
+    FundMe App
+    <script src="./index.js" type="module"> 
+    //using module type of our js file instead of text/javascript because it will make us able to import modules
+
+    </script>
+    <button id="connectButton" >Connect</button>
+    <button id="balanceButton">getBalance</button>
+    <button id="withdrawButton">withdraw</button>
+    <!--here couldve writeen onclick="connect()" withing button but, it wont work as we are importing scripts
+    as modules and not js/text, so do it in index.js-->
+    <!-- form -->
+    <label for="fund">ETH Amount</label>
+    <input id="ethAmount" placeholder="0.1" /> <!--if u dont have nothing bw starting and ending tags, just do this way-->
+    <button id="fundButton">Fund</button>
+
+  </body>
+</html>
